@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piano online</title>
+</head>
+<body>
+    <section id="sectionPrincipal">
+        <header>
+            <h1>Piano JS</h1>
+            <h2>Usa tu teclado para tocar, pasa el mouse para ver las letras.</h2>
+        </header>
+        <section id="sectionPiano">
+            <div class="teclaPresionada"></div><!--div donde se mostrarán las notas-->
+
+            <div class="teclas"><!--div donde se crearan las teclas-->
+
+                <div data-tecla="65" class="tecla" data-nota="C">
+                    <span class="letrasTeclado">A</span>
+                </div>
+
+                <div data-tecla="87" class="tecla sharp" data-nota="C#">
+                    <span class="letrasTeclado">W</span>
+                </div>
+
+                <div data-tecla="83" class="tecla" data-nota="D">
+                    <span class="letrasTeclado">S</span>
+                </div>
+
+                <div data-tecla="69" class="tecla sharp" data-nota="D#">
+                    <span class="letrasTeclado">E</span>
+                </div>
+
+                <div data-tecla="68" class="tecla" data-nota="E">
+                    <span class="letrasTeclado">D</span>
+                </div>
+
+                <div data-tecla="70" class="tecla" data-nota="F">
+                    <span class="letrasTeclado">F</span>
+                </div>
+
+                <div data-tecla="84" class="tecla sharp" data-nota="F#">
+                    <span class="letrasTeclado">T</span>
+                </div>
+
+                <div data-tecla="71" class="tecla" data-nota="G">
+                    <span class="letrasTeclado">G</span>
+                </div>
+
+                <div data-tecla="89" class="tecla sharp" data-nota="G#">
+                    <span class="letrasTeclado">Y</span>
+                </div>
+
+                <div data-tecla="72" class="tecla" data-nota="A">
+                    <span class="letrasTeclado">H</span>
+                </div>
+
+                <div data-tecla="85" class="tecla sharp" data-nota="A#">
+                    <span class="letrasTeclado">U</span>
+                </div>
+
+                <div data-tecla="74" class="tecla" data-nota="B">
+                    <span class="letrasTeclado">J</span>
+                </div>
+
+                <div data-tecla="75" class="tecla" data-nota="C">
+                    <span class="letrasTeclado">K</span>
+                </div>
+
+                <div data-tecla="79" class="tecla sharp" data-nota="C#">
+                    <span class="letrasTeclado">O</span>
+                </div>
+
+                <div data-tecla="76" class="tecla" data-nota="D">
+                    <span class="letrasTeclado">L</span>
+                </div>
+
+                <div data-tecla="80" class="tecla sharp" data-nota="D#">
+                    <span class="letrasTeclado">P</span>
+                </div>
+
+                <div data-tecla="77" class="tecla" data-nota="E">
+                    <span class="letrasTeclado">M</span>
+                </div>
+
+            </div>
+            <!--Todos los audios de cada nota-->
+            <audio data-tecla="65" src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"></audio>
+            <audio data-tecla="87" src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"></audio>
+            <audio data-tecla="83" src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"></audio>
+            <audio data-tecla="69" src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"></audio>
+            <audio data-tecla="68" src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"></audio>
+            <audio data-tecla="70" src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"></audio>
+            <audio data-tecla="84" src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"></audio>
+            <audio data-tecla="71" src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"></audio>
+            <audio data-tecla="89" src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"></audio>
+            <audio data-tecla="72" src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"></audio>
+            <audio data-tecla="85" src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"></audio>
+            <audio data-tecla="74" src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"></audio>
+            <audio data-tecla="75" src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"></audio>
+            <audio data-tecla="79" src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"></audio>
+            <audio data-tecla="76" src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"></audio>
+            <audio data-tecla="80" src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"></audio>
+            <audio data-tecla="77" src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"></audio>
+        </section>
+    </section>
+    <!--video de fondo-->
+    <video playsinline autoplay muted loop id="bgvid" poster="http://carolinegabriel.com/demo/js-keyboard/video/bg.jpg">
+        <source src="http://carolinegabriel.com/demo/js-keyboard/video/bg.mp4" type="video/mp4">
+    </video>
+	    <script src="js/funciones.js"></script><!--Se llama a funciones.js-->
+</body>

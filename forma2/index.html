@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piano online</title>
+</head>
+<body>
+    <section id="sectionPrincipal">
+        <header>
+            <h1>Piano JS</h1>
+            <h2>Usa tu teclado para tocar, pasa el mouse para ver las letras.</h2>
+        </header>
+        <section id="sectionPiano">
+            <div class="teclaPresionada"></div><!--div donde se mostrarán las notas-->
+            <div id="teclas"></div><!--div donde se crearan las teclas-->
+        </section>
+    </section>
+    <!--video de fondo-->
+    <video playsinline autoplay muted loop id="bgvid" poster="http://carolinegabriel.com/demo/js-keyboard/video/bg.jpg">
+        <source src="http://carolinegabriel.com/demo/js-keyboard/video/bg.mp4" type="video/mp4">
+    </video>
+    <script src="js/funciones.js"></script><!--Se llama a funciones.js-->
+</body>
+
